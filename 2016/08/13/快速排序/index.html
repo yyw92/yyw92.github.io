@@ -84,46 +84,16 @@
 
 
 
-<meta name="description" content="&amp;lt;?php
- function quickSort($left,$right,&amp;amp;$array)
-{
-    $l=$left;
-    $r=$right;
-    $pivot = $array[($left+$right)/2];
-    $temp=0;
-
-    while($l&amp;lt;$r){
-
-        while($array[$l]&amp;lt;$pivot) $l">
+<meta name="description" content="快速排序1234567891011121314151617181920212223242526272829303132333435363738&amp;lt;?php 	function quickSort($left,$right,&amp;amp;$array)	&amp;#123;		$l=$left;		$r=$right;		$pivot = $array[($left+$right)/2];		$temp=0">
 <meta property="og:type" content="article">
 <meta property="og:title" content="快速排序">
 <meta property="og:url" content="http://yoursite.com/2016/08/13/快速排序/index.html">
 <meta property="og:site_name" content="逗比青年">
-<meta property="og:description" content="&amp;lt;?php
- function quickSort($left,$right,&amp;amp;$array)
-{
-    $l=$left;
-    $r=$right;
-    $pivot = $array[($left+$right)/2];
-    $temp=0;
-
-    while($l&amp;lt;$r){
-
-        while($array[$l]&amp;lt;$pivot) $l">
-<meta property="og:updated_time" content="2016-08-13T07:59:29.010Z">
+<meta property="og:description" content="快速排序1234567891011121314151617181920212223242526272829303132333435363738&amp;lt;?php 	function quickSort($left,$right,&amp;amp;$array)	&amp;#123;		$l=$left;		$r=$right;		$pivot = $array[($left+$right)/2];		$temp=0">
+<meta property="og:updated_time" content="2016-08-13T08:11:11.833Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速排序">
-<meta name="twitter:description" content="&amp;lt;?php
- function quickSort($left,$right,&amp;amp;$array)
-{
-    $l=$left;
-    $r=$right;
-    $pivot = $array[($left+$right)/2];
-    $temp=0;
-
-    while($l&amp;lt;$r){
-
-        while($array[$l]&amp;lt;$pivot) $l">
+<meta name="twitter:description" content="快速排序1234567891011121314151617181920212223242526272829303132333435363738&amp;lt;?php 	function quickSort($left,$right,&amp;amp;$array)	&amp;#123;		$l=$left;		$r=$right;		$pivot = $array[($left+$right)/2];		$temp=0">
 
 
 
@@ -306,45 +276,7 @@
       
 
       
-        <hr>
-<p>&lt;?php</p>
-<pre><code> function quickSort($left,$right,&amp;$array)
-{
-    $l=$left;
-    $r=$right;
-    $pivot = $array[($left+$right)/2];
-    $temp=0;
-
-    while($l&lt;$r){
-
-        while($array[$l]&lt;$pivot) $l++;
-        while($array[$r]&gt;$pivot) $r--;
-
-
-        if($l&gt;=$r) break;
-
-        $temp=$array[$l];
-        $array[$l]=$array[$r];
-        $array[$r]=$temp;
-
-        if($array[$l]==$pivot) --$r;
-        if($array[$r]==$pivot) ++$l;
-
-
-    }
-
-
-    if($l==$r){
-
-         $l++;
-         $r--;
-    }
-
-    if($left&lt;$r)  quickSort($left,$r,$array);
-    if($right&gt;$l) quickSort($l,$right,$array);
-
-}
-</code></pre><hr>
+        <h1 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line"></div><div class="line"> 	function quickSort($left,$right,&amp;$array)</div><div class="line">	&#123;</div><div class="line">		$l=$left;</div><div class="line">		$r=$right;</div><div class="line">		$pivot = $array[($left+$right)/2];</div><div class="line">		$temp=0;</div><div class="line">		</div><div class="line">		while($l&lt;$r)&#123;</div><div class="line">			</div><div class="line">			while($array[$l]&lt;$pivot) $l++;</div><div class="line">			while($array[$r]&gt;$pivot) $r--;</div><div class="line">			</div><div class="line">			</div><div class="line">			if($l&gt;=$r) break;</div><div class="line">			</div><div class="line">			$temp=$array[$l];</div><div class="line">			$array[$l]=$array[$r];</div><div class="line">			$array[$r]=$temp;</div><div class="line">			</div><div class="line">			if($array[$l]==$pivot) --$r;</div><div class="line">			if($array[$r]==$pivot) ++$l;</div><div class="line">			</div><div class="line">						</div><div class="line">		&#125;</div><div class="line">		</div><div class="line"></div><div class="line">		if($l==$r)&#123;</div><div class="line">			 </div><div class="line">			 $l++;</div><div class="line">			 $r--;</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">		if($left&lt;$r)  quickSort($left,$r,$array);</div><div class="line">		if($right&gt;$l) quickSort($l,$right,$array);</div><div class="line">					</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -462,7 +394,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#快速排序"><span class="nav-number">1.</span> <span class="nav-text">快速排序</span></a></li></ol></div>
             
           </div>
         </section>
