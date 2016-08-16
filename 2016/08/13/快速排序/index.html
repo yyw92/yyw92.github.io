@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yyw92.github.io/2016/08/13/快速排序/index.html">
 <meta property="og:site_name" content="逗比青年">
 <meta property="og:description" content="快速排序1234567891011121314151617181920212223242526272829303132333435363738&amp;lt;?php 	function quickSort($left,$right,&amp;amp;$array)	&amp;#123;		$l=$left;		$r=$right;		$pivot = $array[($left+$right)/2];		$temp=0">
-<meta property="og:updated_time" content="2016-08-13T08:46:37.240Z">
+<meta property="og:updated_time" content="2016-08-16T13:34:56.583Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速排序">
 <meta name="twitter:description" content="快速排序1234567891011121314151617181920212223242526272829303132333435363738&amp;lt;?php 	function quickSort($left,$right,&amp;amp;$array)	&amp;#123;		$l=$left;		$r=$right;		$pivot = $array[($left+$right)/2];		$temp=0">
@@ -284,6 +284,7 @@
 
       
         <h1 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line"></div><div class="line"> 	function quickSort($left,$right,&amp;$array)</div><div class="line">	&#123;</div><div class="line">		$l=$left;</div><div class="line">		$r=$right;</div><div class="line">		$pivot = $array[($left+$right)/2];</div><div class="line">		$temp=0;</div><div class="line">		</div><div class="line">		while($l&lt;$r)&#123;</div><div class="line">			</div><div class="line">			while($array[$l]&lt;$pivot) $l++;</div><div class="line">			while($array[$r]&gt;$pivot) $r--;</div><div class="line">			</div><div class="line">			</div><div class="line">			if($l&gt;=$r) break;</div><div class="line">			</div><div class="line">			$temp=$array[$l];</div><div class="line">			$array[$l]=$array[$r];</div><div class="line">			$array[$r]=$temp;</div><div class="line">			</div><div class="line">			if($array[$l]==$pivot) --$r;</div><div class="line">			if($array[$r]==$pivot) ++$l;</div><div class="line">			</div><div class="line">						</div><div class="line">		&#125;</div><div class="line">		</div><div class="line"></div><div class="line">		if($l==$r)&#123;</div><div class="line">			 </div><div class="line">			 $l++;</div><div class="line">			 $r--;</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">		if($left&lt;$r)  quickSort($left,$r,$array);</div><div class="line">		if($right&gt;$l) quickSort($l,$right,$array);</div><div class="line">					</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+<h1 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;?php </div><div class="line"></div><div class="line">  function bublle_sort(&amp;$arr)&#123;</div><div class="line"></div><div class="line">     for($len = count($arr),$i=0; $i&lt;$len;$i++)&#123;</div><div class="line"></div><div class="line">     	 for($j = 1; $j &lt; $len-$i ; $j++)&#123;</div><div class="line"></div><div class="line">     	 	  if($arr[$j-1] &gt; $arr[$j])&#123;</div><div class="line"></div><div class="line">     	 	  	 $temp = $arr[$j-1];</div><div class="line">     	 	  	 $arr[$j-1] = $arr[$j];</div><div class="line">     	 	  	 $arr[$j] = $temp;</div><div class="line">     	 	  &#125;</div><div class="line">     	 &#125;</div><div class="line">     &#125;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
 <h1 id="hexo图文教程"><a href="#hexo图文教程" class="headerlink" title="hexo图文教程"></a><a href="https://xuanwo.org/2015/03/26/hexo-intor/" target="_blank" rel="external">hexo图文教程</a></h1>
       
     </div>
@@ -305,20 +306,6 @@
     <footer class="post-footer">
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/08/17/冒泡排序/" rel="prev" title="冒泡排序">
-                冒泡排序 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
 
       
@@ -387,7 +374,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -419,7 +406,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#快速排序"><span class="nav-number">1.</span> <span class="nav-text">快速排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo图文教程"><span class="nav-number">2.</span> <span class="nav-text">hexo图文教程</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#快速排序"><span class="nav-number">1.</span> <span class="nav-text">快速排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#冒泡排序"><span class="nav-number">2.</span> <span class="nav-text">冒泡排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo图文教程"><span class="nav-number">3.</span> <span class="nav-text">hexo图文教程</span></a></li></ol></div>
             
           </div>
         </section>
